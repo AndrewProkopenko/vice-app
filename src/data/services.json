@@ -1,0 +1,182 @@
+[
+    {
+       "name":"Чистка от пыли", 
+       "slug":"chistka-noutbuka-ot-pyli"  
+    },
+    {
+       "name":"Сушка", 
+       "slug":"sushka-noutbuka"  
+    },
+    {
+       "name":"Ремонт южного моста", 
+       "slug":"remont-yuzhnogo-mosta-noutbuka"  
+    },
+    {
+       "name":"Ремонт экрана", 
+       "slug":"remont-ekrana-noutbuka"  
+    },
+    {
+       "name":"Ремонт цепей питания", 
+       "slug":"remont-tsepey-pitaniya-noutbuka"  
+    },
+    {
+       "name":"Ремонт тачпада", 
+       "slug":"remont-tachpada-noutbuka"  
+    },
+    {
+       "name":"Ремонт системы охлаждения", 
+       "slug":"remont-sistemy-okhlazhdeniya-noutbuka"  
+    },
+    {
+       "name":"Ремонт северного моста", 
+       "slug":"remont-severnogo-mosta-noutbuka"  
+    },
+    {
+       "name":"Ремонт подсветки", 
+       "slug":"remont-podsvetki-noutbuka"  
+    },
+    {
+       "name":"Ремонт петель крышки", 
+       "slug":"remont-petel-kryshki-noutbuka"  
+    },
+    {
+       "name":"Ремонт материнской платы", 
+       "slug":"remont-materinskoy-platy-noutbuka"  
+    },
+    {
+       "name":"Ремонт контроллера аккумулятора", 
+       "slug":"remont-kontrollera-akkumulyatora-noutbuka"  
+    },
+    {
+       "name":"Ремонт клавиш", 
+       "slug":"remont-klavish-noutbuka" 
+    },
+    {
+       "name":"Ремонт зарядного устройства", 
+       "slug":"remont-zaryadnogo-ustroystva-noutbuka"  
+    },
+    {
+       "name":"Ремонт жесткого диска", 
+       "slug":"remont-zhestkogo-diska-noutbuka"  
+    },
+    {
+       "name":"Ремонт видеочипа", 
+       "slug":"remont-videochipa-noutbuka"  
+    },
+    {
+       "name":"Ремонт блока питания", 
+       "slug":"remont-bloka-pitaniya-noutbuka"  
+    },
+    {
+       "name":"Ремонт аккумулятора", 
+       "slug":"remont-akkumulyatora-noutbuka"  
+    },
+    {
+       "name":"Настройка", 
+       "slug":"nastroyka-noutbukov"  
+    },
+    {
+       "name":"Замена шлейфа", 
+       "slug":"zamena-shleyfa-noutbuka"  
+    },
+    {
+       "name":"Замена термопасты", 
+       "slug":"zamena-termopasty-v-noutbuke"  
+    },
+    {
+       "name":"Замена сетевой карты", 
+       "slug":"zamena-setevoy-karty-noutbuka"  
+    },
+    {
+       "name":"Замена рамки экрана", 
+       "slug":"zamena-ramki-ekrana-noutbuka"  
+    },
+    {
+       "name":"Замена разъёмов", 
+       "slug":"zamena-razemov-noutbuka"  
+    },
+    {
+       "name":"Замена процессора", 
+       "slug":"zamena-protsessora-na-noutbuke"  
+    },
+    {
+       "name":"Замена оперативной памяти", 
+       "slug":"zamena-operativnoy-pamyati-na-noutbuke"  
+    },
+    {
+       "name":"Замена мультиконтроллера", 
+       "slug":"zamena-multikontrollera-noutbuka"  
+    },
+    {
+       "name":"Замена матрицы", 
+       "slug":"zamena-matritsy-noutbuka"  
+    },
+    {
+       "name":"Замена материнской платы", 
+       "slug":"zamena-materinskoy-platy-noutbuka"  
+    },
+    {
+       "name":"Замена лампы подсветки", 
+       "slug":"zamena-lampy-podsvetki-noutbuka"  
+    },
+    {
+       "name":"Замена кулера", 
+       "slug":"zamena-kulera-noutbuka"  
+    },
+    {
+       "name":"Замена корпуса", 
+       "slug":"zamena-korpusa-noutbuka"  
+    },
+    {
+       "name":"Замена клавиатуры", 
+       "slug":"zamena-klaviatury-noutbuka"  
+    },
+    {
+       "name":"Замена звуковой карты", 
+       "slug":"zamena-zvukovoy-karty-noutbuka"  
+    },
+    {
+       "name":"Замена жесткого диска на SSD", 
+       "slug":"zamena-zhestkogo-diska-v-noutbuke-na-ssd"  
+    },
+    {
+       "name":"Замена жёсткого диска", 
+       "slug":"zamena-zhestkogo-diska-na-noutbuke"  
+    },
+    {
+       "name":"Замена встроенного микрофона", 
+       "slug":"zamena-vstroennogo-mikrofona-v-noutbuke"  
+    },
+    {
+       "name":"Замена видеокарты", 
+       "slug":"zamena-videokarty-noutbuka"  
+    },
+    {
+       "name":"Замена блока питания", 
+       "slug":"zamena-bloka-pitaniya-noutbuka"  
+    },
+    {
+       "name":"Замена Wi-Fi модуля", 
+       "slug":"zamena-wi-fi-modulya-noutbuka"  
+    },
+    {
+       "name":"Замена USB-порта", 
+       "slug":"zamena-usb-porta-noutbuka"  
+    },
+    {
+       "name":"Замена SSD-диска", 
+       "slug":"zamena-ssd-diska-noutbuka"  
+    },
+    {
+       "name":"Замена CD/DVD-привода", 
+       "slug":"zamena-cddvd-privoda-noutbuka"  
+    },
+    {
+       "name":"Диагностика", 
+       "slug":"diagnostika-noutbukov"  
+    },
+    {
+       "name":"Апгрейд", 
+       "slug":"apgreyd-noutbukov"  
+    }
+]

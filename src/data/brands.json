@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Acer", 
+        "slug": "acer"  
+    },
+    {
+        "name": "Dell", 
+        "slug": "dell"  
+    },
+    {
+        "name": "Digma", 
+        "slug": "digma"  
+    },
+    {
+        "name": "HP", 
+        "slug": "hp"  
+    },
+    {
+        "name": "Huawei", 
+        "slug": "huawei"  
+    },
+    {
+        "name": "Irbis", 
+        "slug": "irbis"  
+    },
+    {
+        "name": "Lenovo", 
+        "slug": "lenovo"  
+    },
+    {
+        "name": "MSI", 
+        "slug": "msi"  
+    },
+    {
+        "name": "Packard Bell", 
+        "slug": "packard-bell"  
+    },
+    {
+        "name": "Prestigio", 
+        "slug": "prestigio"  
+    },
+    {
+        "name": "Samsung", 
+        "slug": "samsung"  
+    },
+    {
+        "name": "Sony", 
+        "slug": "sony"  
+    },
+    {
+        "name": "Toshiba", 
+        "slug": "toshiba"  
+    },
+    {
+        "name": "Xiaomi", 
+        "slug": "xiaomi"  
+    }
+]
+   

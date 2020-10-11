@@ -1,0 +1,16 @@
+.link-container {
+   a.active {
+      color: brown;
+   } 
+   ul { 
+      margin: 0;
+      padding: 0;
+      li { 
+         list-style: none;
+         &.hidden:nth-child(n + 6) { 
+            display: none; 
+         }
+      }
+   }
+}
+ 
