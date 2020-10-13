@@ -1,16 +1,8 @@
 import React from 'react'
-import { 
-        // Route, Switch, 
-        useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
         
-import LaptopContext from '../context/LaptopContext'
-
-// import Filtered from './Filtered'
-// import Main from './Main'
- 
-// import serviceData from '../data/services.json'
-
+import LaptopContext from '../context/LaptopContext' 
 
 
 function Content() {
@@ -18,9 +10,7 @@ function Content() {
 
     let {brandSlug, serviceSlug} = useParams()
 
-    let filter = brandSlug || serviceSlug
-
-    // let [filteredCompanies, setFilteredCompanies] = React.useState([])
+    let headingString = brandSlug ? context.activeBrand.name : context.activeService.name
  
     React.useEffect( () => { 
         if(brandSlug) {
@@ -36,30 +26,7 @@ function Content() {
             })
         }
     }, [] ) 
- 
-   
-    // React.useEffect( () => { 
-    //     let newList = []
-    //     laptops.map( (item) => {
-    //         if(brand) {
-    //            item.brand.map( (brandId) => {
-    //                 if(brandId === activeBrand.id) {
-    //                     newList.push(item)
-    //                     console.log(filteredCompanies)
-    //                 }
-    //            })
-    //         }
-    //         if(service) {
-    //             console.log(service)
-    //         }
-    //     })
-    //     setFilteredCompanies(newList)
-        
-    // }, filter ) 
-
-
   
-
     function renderItems() {
         let newList = []
         context.companies.map( (item) => {  
@@ -81,8 +48,9 @@ function Content() {
             }
             return 0
         })
+        if(newList.length > 0)
         return newList.map( (item, index) => (
-            <div key={index} className='border border-primary p-3 mb-3'>
+            <div key={index} className='border border-primary bg-white p-3 mb-3'>
                 <h4>
                     {item.name}
                 </h4>
@@ -111,13 +79,17 @@ function Content() {
                 </table>
             </div>
         ))
+        return <h6 className='mt-4'>Компаний соответствующих фильру нет</h6>            
     }
 
     return (
-        <div className='bg-white border border-primary p-3'>
+        //bg-white border border-primary p-3
+        <div className=''>
 
             <h3>
-                { filter }
+                { 
+                    headingString
+                }
             </h3> 
             {
                 renderItems()
