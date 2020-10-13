@@ -1,19 +1,19 @@
 import React from 'react'
 
-import ListRender from './ListRender'
-
-import brands from '../data/brands.json'
-import services from '../data/services.json'
-
+import ListRender from './ListRender' 
+import LaptopContext from '../context/LaptopContext'
 
 function Sidebar() {
+
+    let context = React.useContext(LaptopContext) 
+    
     return (
         <div className='bg-white border border-primary p-3'>
             <div className="d-flex flex-column link-container">
                 <ListRender 
                     title='Бренды' 
                     preSlug='brand'
-                    data={brands}
+                    data={context.brands}
                 />
             </div> 
             <hr/>
@@ -21,7 +21,7 @@ function Sidebar() {
                 <ListRender 
                     title='Все услуги' 
                     preSlug='service'
-                    data={services}
+                    data={context.services}
                 />
             </div>
         </div>  

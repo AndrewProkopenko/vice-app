@@ -1,0 +1,252 @@
+[
+    {
+        "name": "Компания 1",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [1,2,3,4], 
+        "service": [1,2,4,6,7],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 2",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [5,6,8], 
+        "service": [10,11,12],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 3",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [4, 8, 12], 
+        "service": [11,12,13,14],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 4",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [8,9,10,11], 
+        "service": [21,22,24,25,29],
+        "phone": "+7 111 111 11",
+        "images": ["https://picsum.photos/seed/picsum/200/150"] ,
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 5",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [9,10,11,12,13,14], 
+        "service": [15,16,17,18],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 6",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [12,1,5,9], 
+        "service": [22,25,44,45],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 7",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [1,2,3,4], 
+        "service": [1,2,4,6,7],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 8",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [1,2,3,4], 
+        "service": [1,2,4,6,7],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 9",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [1,2,3,4], 
+        "service": [1,2,4,6,7],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    },
+    {
+        "name": "Компания 10",
+        "description": "Занимаемся ремонтом и всяким прочим",
+        "brand": [1,2,3,4], 
+        "service": [1,2,4,6,7],
+        "phone": "+7 111 111 11", 
+        "images": ["https://picsum.photos/seed/picsum/200/150"],
+        "price": [ 
+            {
+                "name":"Замена матрицы", 
+                "price": "от 595 руб.",
+                "slug":"zamena-matritsy-noutbuka"
+            },
+            {
+                "name":"Замена мультиконтроллера", 
+                "price": "от 595 руб.",
+                "slug":"zamena-multikontrollera-noutbuka"
+             },
+             {
+                "name":"Замена лампы подсветки", 
+                "price": "от 595 руб.",
+                "slug":"zamena-lampy-podsvetki-noutbuka"
+             }
+        ]
+    }
+]

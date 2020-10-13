@@ -1,12 +1,30 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+import LaptopContext from '../context/LaptopContext'
+
 function ListRender(props) {
 
     let [hiddenClass, setHiddenClass] = React.useState(true)
 
+    const context = React.useContext(LaptopContext)
+
     function showFullList() { 
         setHiddenClass(!hiddenClass)
+    }
+
+    function hendlerSetActive(item) { 
+        switch(props.preSlug) {
+            case 'brand': {
+                context.setActiveBrand(item)
+                break;
+            }
+            case 'service': {
+                context.setActiveService(item)
+                break;
+            }
+            default: break;
+        }
     }
 
     function renderLinks() { 
@@ -16,6 +34,7 @@ function ListRender(props) {
             >
                 <NavLink 
                      to={ `/${props.preSlug}/${item.slug}`}
+                     onClick={ ()=>{ hendlerSetActive(item)} }
                 > 
                 {item.name}
              </NavLink>

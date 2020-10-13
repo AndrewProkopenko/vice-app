@@ -1,59 +1,73 @@
 [
     {
         "name": "Acer", 
-        "slug": "acer"  
+        "slug": "acer",
+        "id": 1  
     },
     {
         "name": "Dell", 
-        "slug": "dell"  
+        "slug": "dell",
+        "id": 2  
     },
     {
         "name": "Digma", 
-        "slug": "digma"  
+        "slug": "digma",
+        "id": 3  
     },
     {
         "name": "HP", 
-        "slug": "hp"  
+        "slug": "hp",
+        "id": 4  
     },
     {
         "name": "Huawei", 
-        "slug": "huawei"  
+        "slug": "huawei",
+        "id": 5  
     },
     {
         "name": "Irbis", 
-        "slug": "irbis"  
+        "slug": "irbis",
+        "id": 6  
     },
     {
         "name": "Lenovo", 
-        "slug": "lenovo"  
+        "slug": "lenovo",
+        "id": 7  
     },
     {
         "name": "MSI", 
-        "slug": "msi"  
+        "slug": "msi",
+        "id": 8  
     },
     {
         "name": "Packard Bell", 
-        "slug": "packard-bell"  
+        "slug": "packard-bell",
+        "id": 9  
     },
     {
         "name": "Prestigio", 
-        "slug": "prestigio"  
+        "slug": "prestigio",
+        "id": 10  
     },
     {
         "name": "Samsung", 
-        "slug": "samsung"  
+        "slug": "samsung",
+        "id": 11  
     },
     {
         "name": "Sony", 
-        "slug": "sony"  
+        "slug": "sony",
+        "id": 12  
     },
     {
         "name": "Toshiba", 
-        "slug": "toshiba"  
+        "slug": "toshiba",
+        "id": 13  
     },
     {
         "name": "Xiaomi", 
-        "slug": "xiaomi"  
+        "slug": "xiaomi",
+        "id": 14  
     }
 ]
    

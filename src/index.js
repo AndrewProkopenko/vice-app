@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom'; 
 import App from './App';    
 
+import LaptopProvider from './context/LaptopProvider'
+
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LaptopProvider>  
+        <App /> 
+    </LaptopProvider>  
   </React.StrictMode>,
   document.getElementById('root')
 );
