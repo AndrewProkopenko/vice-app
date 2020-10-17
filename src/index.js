@@ -1,16 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; 
-import App from './App';    
+import ReactDOM from 'react-dom';  
 
-import LaptopProvider from './context/LaptopProvider'
+
+import RouterComponent from './RouterComponent'
 
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <LaptopProvider>  
-        <App /> 
-    </LaptopProvider>  
+  <React.StrictMode> 
+      <RouterComponent /> 
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,31 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-
-import LaptopContext from '../context/LaptopContext'
+import prefixes from '../data/prefixes.json'
+ 
 
 function ListRender(props) {
 
     let [hiddenClass, setHiddenClass] = React.useState(true)
 
-    const context = React.useContext(LaptopContext)
-
+    const prefix = prefixes[0][`${props.typeProdUrl}`]
+  
     function showFullList() { 
         setHiddenClass(!hiddenClass)
-    }
-
-    function hendlerSetActive(item) { 
-        switch(props.preSlug) {
-            case 'brand': {
-                context.setActiveBrand(item)
-                break;
-            }
-            case 'service': {
-                context.setActiveService(item)
-                break;
-            }
-            default: break;
-        }
-    }
+    } 
 
     function renderLinks() { 
         return props.data.map( (item, index) => ( 
@@ -33,8 +19,8 @@ function ListRender(props) {
                 className={hiddenClass ? 'hidden' : 'show' }
             >
                 <NavLink 
-                     to={ `/${props.preSlug}/${item.slug}`}
-                     onClick={ ()=>{ hendlerSetActive(item)} }
+                     to={ `/${prefix}${props.typeProdUrl}/${props.preSlug}/${item.slug}`}
+                     onClick={ ()=>{ props.setActive(item)} }
                 > 
                 {item.name}
              </NavLink>
@@ -56,7 +42,7 @@ function ListRender(props) {
                 } 
             </ul>
 
-            <button className='btn btn-primary my-3' onClick={ showFullList }>
+            <button className='btn btn-dark my-3' onClick={ showFullList }>
                 Показать еще
             </button>
 

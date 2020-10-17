@@ -1,0 +1,222 @@
+[
+    {
+       "name":"Чистка сливного насоса", 
+       "slug":"chistka-slivnogo-nasosa-v-stiralnoy-mashine",
+       "id": 1 
+    }, 
+    {
+       "name":"Установка встраиваемых стиральных машин", 
+       "slug":"ustanovka-vstraivaemykh-stiralnykh-mashin",
+       "id": 2 
+    }, 
+    {
+       "name":"Ремонт электронного блока", 
+       "slug":"remont-elektronnogo-bloka-stiralnoy-mashiny",
+       "id": 3 
+    }, 
+    {
+       "name":"Ремонт прессостатов", 
+       "slug":"remont-pressostatov-stiralnoy-mashiny",
+       "id": 4 
+    }, 
+    {
+       "name":"Ремонт помпы", 
+       "slug":"remont-pompy-stiralnoy-mashiny",
+       "id": 5 
+    }, 
+    {
+       "name":"Ремонт платы", 
+       "slug":"remont-platy-stiralnoy-mashiny",
+       "id": 6 
+    }, 
+    {
+       "name":"Ремонт отжима", 
+       "slug":"remont-otzhima-stiralnoy-mashiny",
+       "id": 7 
+    }, 
+    {
+       "name":"Ремонт замков", 
+       "slug":"remont-zamkov-stiralnykh-mashin",
+       "id": 8 
+    }, 
+    {
+       "name":"Ремонт дозатора", 
+       "slug":"remont-dozatora-stiralnoy-mashiny",
+       "id": 9 
+    }, 
+    {
+       "name":"Ремонт двигателя", 
+       "slug":"remont-dvigatelya-stiralnoy-mashiny",
+       "id": 10 
+    }, 
+    {
+       "name":"Ремонт вертикальных стиральных машин", 
+       "slug":"remont-vertikalnykh-stiralnykh-mashin",
+       "id": 11 
+    }, 
+    {
+       "name":"Ремонт барабанов", 
+       "slug":"remont-barabanov-stiralnykh-mashin",
+       "id": 12 
+    }, 
+    {
+       "name":"Ремонт баков", 
+       "slug":"remont-bakov-stiralnoy-mashiny",
+       "id": 13 
+    }, 
+    {
+       "name":"Прошивка электронного блока", 
+       "slug":"proshivka-elektronnogo-bloka-stiralnoy-mashiny",
+       "id": 14 
+    }, 
+    {
+       "name":"Подключение вертикальных стиральных машин", 
+       "slug":"podklyuchenie-vertikalnykh-stiralnykh-mashin",
+       "id": 15 
+    }, 
+    {
+       "name":"Подключение", 
+       "slug":"podklyuchenie-stiralnykh-mashin",
+       "id": 16 
+    }, 
+    {
+       "name":"Замена электронного модуля", 
+       "slug":"zamena-elektronnogo-modulya-v-stiralnoy-mashine",
+       "id": 17 
+    }, 
+    {
+       "name":"Замена щёток двигателя", 
+       "slug":"zamena-shchetok-dvigatelya-v-stiralnoy-mashine",
+       "id": 18 
+    }, 
+    {
+       "name":"Замена щёток", 
+       "slug":"zamena-shchetok-v-stiralnoy-mashine",
+       "id": 19 
+    }, 
+    {
+       "name":"Замена шкива барабана", 
+       "slug":"zamena-shkiva-barabana-stiralnoy-mashiny",
+       "id": 20 
+    }, 
+    {
+       "name":"Замена фильтра", 
+       "slug":"zamena-filtra-v-stiralnoy-mashine",
+       "id": 21 
+    }, 
+    {
+       "name":"Замена уплотнителя", 
+       "slug":"zamena-uplotnitelya-v-stiralnoy-mashine",
+       "id": 22 
+    }, 
+    {
+       "name":"Замена ТЭНа", 
+       "slug":"zamena-tena-v-stiralnoy-mashine",
+       "id": 23 
+    }, 
+    {
+       "name":"Замена термостата", 
+       "slug":"zamena-termostata-stiralnoy-mashiny",
+       "id": 24 
+    }, 
+    {
+       "name":"Замена стекла", 
+       "slug":"zamena-stekla-v-stiralnoy-mashine",
+       "id": 25 
+    }, 
+    {
+       "name":"Замена сливного шланга", 
+       "slug":"zamena-slivnogo-shlanga-v-stiralnoy-mashine",
+       "id": 26 
+    }, 
+    {
+       "name":"Замена сальника", 
+       "slug":"zamena-salnika-stiralnoy-mashiny",
+       "id": 27 
+    }, 
+    {
+       "name":"Замена пружин подвески", 
+       "slug":"zamena-pruzhin-podveski-stiralnoy-mashiny",
+       "id": 28 
+    }, 
+    {
+       "name":"Замена подшипника", 
+       "slug":"zamena-podshipnikov-v-stiralnoy-mashine",
+       "id": 29 
+    }, 
+    {
+       "name":"Замена петель", 
+       "slug":"zamena-petel-v-stiralnoy-mashine",
+       "id": 30 
+    }, 
+    {
+       "name":"Замена опоры бака", 
+       "slug":"zamena-opory-baka-stiralnoy-mashiny",
+       "id": 31 
+    }, 
+    {
+       "name":"Замена насоса", 
+       "slug":"zamena-nasosa-v-stiralnoy-mashine",
+       "id": 32 
+    }, 
+    {
+       "name":"Замена манжеты люка", 
+       "slug":"zamena-manzhety-lyuka-stiralnoy-mashiny",
+       "id": 33 
+    }, 
+    {
+       "name":"Замена лицевой панели", 
+       "slug":"zamena-litsevoy-paneli-stiralnoy-mashiny",
+       "id": 34 
+    }, 
+    {
+       "name":"Замена крестовины", 
+       "slug":"zamena-krestoviny-v-stiralnoy-mashine",
+       "id": 35 
+    }, 
+    {
+       "name":"Замена конденсатора", 
+       "slug":"zamena-kondensatora-v-stiralnoy-mashine",
+       "id": 36 
+    }, 
+    {
+       "name":"Замена клапана", 
+       "slug":"zamena-klapana-v-stiralnoy-mashine",
+       "id": 37 
+    }, 
+    {
+       "name":"Замена заливного шланга", 
+       "slug":"zamena-zalivnogo-shlanga-v-stiralnoy-mashine",
+       "id": 38 
+    }, 
+    {
+       "name":"Замена датчика уровня воды", 
+       "slug":"zamena-datchika-urovnya-vody-v-stiralnoy-mashine",
+       "id": 39 
+    }, 
+    {
+       "name":"Замена амортизаторов", 
+       "slug":"zamena-amortizatorov-v-stiralnoy-mashine",
+       "id": 40 
+    }, 
+    {
+       "name":"Замена аквастопа", 
+       "slug":"zamena-akvastopa-gidrostopa-v-stiralnoy-mashine",
+       "id": 41 
+    }, 
+    {
+       "name":"Диагностика", 
+       "slug":"diagnostika-stiralnykh-mashin",
+       "id": 42 
+    }, 
+    {
+       "name":"Демонтаж", 
+       "slug":"demontazh-stiralnoy-mashiny",
+       "id": 43 
+    }, 
+    {
+       "name":"Балансировка", 
+       "slug":"balansirovka-stiralnykh-mashin",
+       "id": 44 
+    }
+]
