@@ -14,7 +14,7 @@ function Sidebar(props) {
     }
      
     return (
-        <div className='bg-white rounded border border-dark p-3'>
+        <div className=' sticky-sidebar bg-white rounded border border-dark p-3'>
             <div className="d-flex flex-column link-container">
                 <ListRender 
                     title='Бренды' 

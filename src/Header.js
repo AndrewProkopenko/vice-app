@@ -10,7 +10,7 @@ function Header() {
     return (
         <header className='bg-dark'>
             <div className='container'>
-                <nav className="navbar navbar-expand-lg navbar-dark px-0">
+                <nav className="navbar navbar-expand-sm navbar-dark px-0">
                     
                     <div className=" navbar-collapse" >
                         <ul className="navbar-nav mr-auto">

@@ -7,13 +7,14 @@ import { useParams } from 'react-router-dom'
 
 function Content(props) { 
 
-    let {brandSlug, serviceSlug} = useParams() 
+    const {brandSlug, serviceSlug} = useParams() 
+    console.log(brandSlug)
 
     let documentTitle = props.context.title
      
 
-    const headingString = brandSlug ? props.context.activeBrand.name : props.context.activeService.name
-
+    let headingString = brandSlug ? props.context.activeBrand.name : props.context.activeService.name
+ 
     if(headingString) documentTitle += " - " + headingString 
  
     React.useEffect( () => {  
@@ -99,14 +100,15 @@ function Content(props) {
                 </div>
             </div>
         ))
-        return  <div className='empty-container'>
+        return  <div className='empty-container '>
+             <h5>По запросу - <b>{headingString}</b> ничего не найдено. </h5> 
             <span></span> 
             <div>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <h5>По запросу - <b>{headingString}</b> ничего не найдено. </h5>    
+              
             <p></p>  
         </div>         
     }

@@ -18,7 +18,7 @@ function Home() {
                         <span></span>
                         <span></span>
                     </div>
-                    <h5> It's main page! </h5>    
+                    <h5 > It's main page! </h5>    
                     <p></p>  
                 </div>   
             </div>

@@ -40,12 +40,8 @@ function RouterComponent() {
                             <Route exact path={`/${laptopsPrefix}laptops/brand/:brandSlug`} component={LaptopsApp} /> 
                             <Route exact path={`/${laptopsPrefix}laptops/service/:serviceSlug`} component={LaptopsApp} /> 
                             
-                            <Route exact path={`/${laptopsPrefix}laptops/brand/`}> 
-                                <Redirect to={`/${laptopsPrefix}laptops`} />
-                            </Route> 
-                            <Route exact path={`/${laptopsPrefix}laptops/service/`}> 
-                                <Redirect to={`/${laptopsPrefix}laptops`} />
-                            </Route>
+                            <Route exact path={`/${laptopsPrefix}laptops/brand/`}>  <Redirect to={`/${laptopsPrefix}laptops`} /> </Route> 
+                            <Route exact path={`/${laptopsPrefix}laptops/service/`}> <Redirect to={`/${laptopsPrefix}laptops`} /> </Route>
                             
                             <Route exact path={`/${laptopsPrefix}laptops`} component={LaptopsApp} />
                              
@@ -54,12 +50,8 @@ function RouterComponent() {
                             <Route exact path={`/${washersPrefix}washers/brand/:brandSlug`} component={WashersApp} /> 
                             <Route exact path={`/${washersPrefix}washers/service/:serviceSlug`} component={WashersApp} />  
                             
-                            <Route exact path={`/${washersPrefix}washers/brand/`}> 
-                                <Redirect to={`/${washersPrefix}washers`} />
-                            </Route> 
-                            <Route exact path={`/${washersPrefix}washers/service/`}> 
-                                <Redirect to={`/${washersPrefix}washers`} />
-                            </Route>  
+                            <Route exact path={`/${washersPrefix}washers/brand/`}> <Redirect to={`/${washersPrefix}washers`} /> </Route> 
+                            <Route exact path={`/${washersPrefix}washers/service/`}> <Redirect to={`/${washersPrefix}washers`} /> </Route>  
                             
                             <Route  path={`/${washersPrefix}washers`} component={WashersApp} /> 
                             
