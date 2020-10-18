@@ -1,10 +1,9 @@
 import React from 'react'
-
-// import LaptopProvider from '../context/LaptopProvider'
+ 
 import LaptopContext from '../context/Laptops/LaptopContext'
-
-import LaptopsSidebar from './LaptopsSidebar'
-import LaptopsContent from './LaptopsContent' 
+ 
+import Sidebar from '../Sidebar/Sidebar' 
+import Content from '../Content/Content' 
 
 function LaptopsApp() {
  
@@ -16,12 +15,15 @@ function LaptopsApp() {
                    { context.getHeadingString() }
                 </h1> 
                 <div className='row'>
-                    <div className='col-12 col-sm-5 col-md-3'>
-                        <LaptopsSidebar/>
+                    <div className='col-12 col-sm-5 col-md-3'> 
+                        <Sidebar
+                            context={context}
+                            typeProdUrl='laptops'
+                        /> 
                     </div>
                     
                     <div className='col-12 col-sm-7 col-md-9'> 
-                        <LaptopsContent />
+                        <Content context={context}  />
                     </div>
                 </div> 
             </div>  

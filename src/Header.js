@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import prefixes from './data/prefixes.json'
 
 function Header() {
+
+    const laptopsPrefix = prefixes[0]['laptops']
+    const washersPrefix = prefixes[0]['washers'] 
+
     return (
         <header className='bg-dark'>
             <div className='container'>
@@ -14,10 +18,10 @@ function Header() {
                                 <NavLink exact className="nav-link pl-0 pr-4" to="/">Главная</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink  className="nav-link pl-0 pr-4" to={`/${prefixes[0]['laptops']}laptops`}>Ноутбуки</NavLink>
+                                <NavLink  className="nav-link pl-0 pr-4" to={`/${laptopsPrefix}laptops`}>Ноутбуки</NavLink>
                             </li> 
                             <li className="nav-item">
-                                <NavLink  className="nav-link pl-0 pr-4" to={`/${prefixes[0]['washers']}washers`}  >Стиральные машины</NavLink>
+                                <NavLink  className="nav-link pl-0 pr-4" to={`/${washersPrefix}washers`}  >Стиральные машины</NavLink>
                             </li> 
                         </ul>
                         
