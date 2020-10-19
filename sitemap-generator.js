@@ -8,7 +8,7 @@ require("babel-register")({
   function generateSitemap() {
       return (
         new Sitemap(router) 
-            .build("http://localhost:3000/")
+            .build("http://localhost:3000")
             .save("./public/sitemap.xml")
       );
   }

@@ -1,48 +1,48 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router';
- 
-import Home from './src/Home' 
-
-import LaptopsApp from './src/Laptops/LaptopsApp';    
-import WashersApp from './src/Washers/WashersApp'
- 
- 
-
+import React from 'react'
+import {Route, Redirect} from 'react-router-dom'
 import prefixes from './src/data/prefixes.json'
+
+import laptopsBrands from './src/data/laptops/brands.json'
+import laptopsServices from './src/data/laptops/services.json'
+
+import washersBrands from './src/data/washers/brands.json'
+import washersServices from './src/data/washers/services.json'
 
 const laptopsPrefix = prefixes[0]['laptops']
 const washersPrefix = prefixes[0]['washers'] 
 
+// const 
+
 export default (
     
-    <Route>
-        <Route exact path='/' component={Home} />
- 
-        <Route exact path={`/${laptopsPrefix}laptops/brand/:brandSlug`} component={LaptopsApp} /> 
-        <Route exact path={`/${laptopsPrefix}laptops/service/:serviceSlug`} component={LaptopsApp} /> 
-        
-        <Route exact path={`/${laptopsPrefix}laptops/brand/`}> 
-            <Redirect to={`/${laptopsPrefix}laptops`} />
-        </Route> 
-        <Route exact path={`/${laptopsPrefix}laptops/service/`}> 
-            <Redirect to={`/${laptopsPrefix}laptops`} />
-        </Route>
-        
-        <Route exact path={`/${laptopsPrefix}laptops`} component={LaptopsApp} />
+    <Route>  
 
+        {
+            laptopsBrands.map((item, index) => (
+                <Route key={index} exact path={`/${laptopsPrefix}laptops/brand/${item.slug}`} />
+            ))
+        }
+        {
+            laptopsServices.map((item, index) => (
+                <Route key={index} exact path={`/${laptopsPrefix}laptops/service/${item.slug}`} />
+            ))
+        }
+           
+        <Route exact path={`/${laptopsPrefix}laptops`} />
 
-        {/* Washers */}
-        <Route exact path={`/${washersPrefix}washers/brand/:brandSlug`} component={WashersApp} /> 
-        <Route exact path={`/${washersPrefix}washers/service/:serviceSlug`} component={WashersApp} />  
-        
-        <Route exact path={`/${washersPrefix}washers/brand/`}> 
-            <Redirect to={`/${washersPrefix}washers`} />
-        </Route> 
-        <Route exact path={`/${washersPrefix}washers/service/`}> 
-            <Redirect to={`/${washersPrefix}washers`} />
-        </Route>  
+        {
+            washersBrands.map((item, index) => (
+                <Route key={index} exact path={`/${washersPrefix}washers/brand/${item.slug}`} />
+            ))
+        }  
+        {
+            washersServices.map((item, index) => (
+                <Route key={index} exact path={`/${washersPrefix}washers/service/${item.slug}`} />
+            ))
+        }   
+         
 
-        <Route  path={`/${washersPrefix}washers`} component={WashersApp} /> 
+        <Route  path={`/${washersPrefix}washers`} /> 
   
     </Route>
 );
