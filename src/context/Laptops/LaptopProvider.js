@@ -13,7 +13,7 @@ class LaptopProvider extends Component {
          companies: companies,
          activeBrand: [],
          activeService: [],
-         title: 'Ноутбуки'
+         title: 'Ремонт ноутбуков'
     }
 
     render() { 

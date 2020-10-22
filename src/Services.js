@@ -2,13 +2,15 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import MetaTags from 'react-meta-tags';
 
+
 function Home() {
  
     return (
         <div>
             <MetaTags>
-                <title>Услуги</title>
-                <meta name="description" content="Услуги" /> 
+                <title>Услуги по ремонту компьютеров, оргтехники, планшетов в Москве - АСЦ "Сура-Сервис"</title>
+                <meta name="keywords" content="ремонт компьютеров цены, ремонт оргтехники в Москве, ремонт планшетов в Москве"></meta>
+                <meta name="description" content="Авторизованный сервисный центр &quot;Сура-Сервис&quot; осуществляет гарантийный и послегарантийный ремонт и техническое обслуживание компьютерного оборудования и оргтехники, планшетов и смартфонов, аудио и видео оборудования." /> 
             </MetaTags>
             <div className='container services-container'>
                 <h1>Услуги</h1> 

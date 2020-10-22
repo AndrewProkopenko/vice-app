@@ -1,15 +1,22 @@
 import React from 'react' 
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';  
-
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';   
 import prefixes from './data/prefixes.json'
 
 import './assets/style/style.scss' ; 
   
 import Header from './Header'
-
+import Footer from './Footer'
+ 
 import Home from './Home'
 import Price from './Price'
 import Services from './Services'
+
+import GarantiynyyRemont from './uslugi/GarantiynyyRemont'
+import RemontKompyuterov from './uslugi/RemontKompyuterov'
+import RemontIstochnikov from './uslugi/RemontIstochnikov'
+import RemontPrinterov from './uslugi/RemontPrinterov'
+import RemontPlanshetov from './uslugi/RemontPlanshetov'
+import PlatnyyRemont from './uslugi/PlatnyyRemont'
 
 
 import ErrorPage from './ErrorPage' 
@@ -20,7 +27,7 @@ import WashersApp from './Washers/WashersApp'
 
 import LaptopProvider from './context/Laptops/LaptopProvider'
 import WasherProvider from './context/Washers/WasherProvider'
- 
+  
 
 
 
@@ -35,14 +42,29 @@ function RouterComponent() {
         <LaptopProvider>  
         <div className="mb-4"> 
                 <Router > 
-                 
+                   
                         <Header/>
-                        
+
+ 
+
                         <Switch>
                             <Route exact path='/' component={Home} />
+
+                          
+
                             <Route exact path='/price' component={Price} />
 
+                            {/* Services  -  Uslugi  */}
                             <Route exact path='/uslugi' component={Services} />
+
+                            <Route exact path='/uslugi/garantiynyy-remont' component={GarantiynyyRemont} />
+                            <Route exact path='/uslugi/remont-kompyuterov' component={RemontKompyuterov} />
+                            <Route exact path='/uslugi/remont-istochnikov-bespereboynogo-pitaniya-i-stabilizatorov-napryazheniya' component={RemontIstochnikov} />
+                            <Route exact path='/uslugi/remont-printerov-mfu-kopirov' component={RemontPrinterov} />
+                            <Route exact path='/uslugi/remont-planshetov-i-smartfonov' component={RemontPlanshetov} />
+                            <Route exact path='/uslugi/platnyy-remont' component={PlatnyyRemont} />
+
+
                             <Route exact path={`/uslugi/remont-noutbukov/brand/`}>  <Redirect to={`/uslugi/remont-noutbukov`} /> </Route> 
                             <Route exact path={`/uslugi/remont-noutbukov/service/`}> <Redirect to={`/uslugi/remont-noutbukov`} /> </Route>
                             <Route exact path={`/uslugi/remont-noutbukov/brand/:brandSlug-${laptopsPrefix}`} component={LaptopsApp} />
@@ -72,6 +94,8 @@ function RouterComponent() {
                             <Route  path='*' component={ErrorPage} />
                         </Switch>
                    
+
+                        <Footer/>
                 </Router>  
              
         </div> 

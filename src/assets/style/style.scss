@@ -4,6 +4,8 @@
 @import '_header';
 @import '_services'; 
 @import '_price'; 
+@import '_styles-prev';
+
 body { 
    font-family: 'Roboto Condensed', sans-serif;
 }
@@ -103,4 +105,18 @@ a:focus {
     h5 { 
        color: rgba(0, 0, 0, 0.446);
     }
+}
+
+.image-230 { 
+   width: 230px;
+   height: 230px;
+   display: inline-block;
+   margin: 15px;
+}
+ 
+.float-left { 
+   float: left;
+}
+.float-right { 
+   float: right;
 }
