@@ -12,7 +12,7 @@ function Sidebar(props) {
         props.context.setActiveService(service)
         props.context.setActiveBrand([])
     }
-     
+      
     return (
         <div className=' sticky-sidebar bg-white rounded border border-dark p-3'>
             <div className="d-flex flex-column link-container">
@@ -20,6 +20,7 @@ function Sidebar(props) {
                     title='Бренды' 
                     preSlug='brand'
                     typeProdUrl={props.typeProdUrl}
+                    typeProd={props.typeProd}
                     data={props.context.brands}
                     setActive={setActiveBrand}
                 />
@@ -30,6 +31,7 @@ function Sidebar(props) {
                     title='Все услуги' 
                     preSlug='service'
                     typeProdUrl={props.typeProdUrl}
+                    typeProd={props.typeProd}
                     data={props.context.services} 
                     setActive={setActiveService}
                 />

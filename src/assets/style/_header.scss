@@ -1,0 +1,61 @@
+.sura-header { 
+    background: #2e0e00; 
+    &-link { 
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 88px;
+        padding: 0 11px;
+        font-size: 14px;
+        color: #fff;
+        transition: all 0.3s ease-in-out;   
+        &:hover { 
+            background: #974726;
+            text-decoration: none;
+            color: #fff;
+            >ul {
+                transform: scaleX(1) scaleY(1); 
+                opacity: 1;
+            }
+        }
+        &.active { 
+            background: #974726;
+        }
+        >ul { 
+            opacity: 0;
+            transform: scaleX(0) scaleY(0); 
+            transform-origin: left top;
+
+            position: absolute;
+            z-index: 5;
+            top: 100%;
+            left: 0;
+
+            width: 290px;
+
+            background: #974726;
+            padding: 10px 0;
+            margin: 0;
+            transition: all 0.3s ease-in-out;  
+            li { 
+                list-style: none; 
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                &:first-child { 
+                    border-top: 0;
+                }
+                a { 
+                    display: block;
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 7px 10px 7px 20px;
+                    transition: all 0.3s ease-in-out;   
+                    &:hover { 
+                        text-decoration: none;
+                        background: #7c3a1f;
+                    }
+                }
+            }
+        }
+    }
+}

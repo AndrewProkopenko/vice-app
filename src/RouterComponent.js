@@ -6,7 +6,12 @@ import prefixes from './data/prefixes.json'
 import './assets/style/style.scss' ; 
   
 import Header from './Header'
+
 import Home from './Home'
+import Price from './Price'
+import Services from './Services'
+
+
 import ErrorPage from './ErrorPage' 
 
 import LaptopsApp from './Laptops/LaptopsApp';    
@@ -35,6 +40,14 @@ function RouterComponent() {
                         
                         <Switch>
                             <Route exact path='/' component={Home} />
+                            <Route exact path='/price' component={Price} />
+
+                            <Route exact path='/uslugi' component={Services} />
+                            <Route exact path={`/uslugi/remont-noutbukov/brand/`}>  <Redirect to={`/uslugi/remont-noutbukov`} /> </Route> 
+                            <Route exact path={`/uslugi/remont-noutbukov/service/`}> <Redirect to={`/uslugi/remont-noutbukov`} /> </Route>
+                            <Route exact path={`/uslugi/remont-noutbukov/brand/:brandSlug-${laptopsPrefix}`} component={LaptopsApp} />
+                            <Route exact path={`/uslugi/remont-noutbukov/service/:serviceSlug-${laptopsPrefix}`} component={LaptopsApp} />
+                            <Route exact path='/uslugi/remont-noutbukov' component={LaptopsApp} />
 
                             {/* Laptops */} 
                             <Route exact path={`/${laptopsPrefix}laptops/brand/:brandSlug`} component={LaptopsApp} /> 

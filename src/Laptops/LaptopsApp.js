@@ -18,7 +18,8 @@ function LaptopsApp() {
                 <div className='col-12 col-md-3'> 
                     <Sidebar
                         context={context}
-                        typeProdUrl='laptops'
+                        typeProdUrl='uslugi/remont-noutbukov'
+                        typeProd='laptops'
                     /> 
                 </div>
                 

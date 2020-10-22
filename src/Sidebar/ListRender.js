@@ -7,7 +7,7 @@ function ListRender(props) {
 
     let [hiddenClass, setHiddenClass] = React.useState(true)
 
-    const prefix = prefixes[0][`${props.typeProdUrl}`]
+    const prefix = prefixes[0][`${props.typeProd}`]
   
     function showFullList() { 
         setHiddenClass(!hiddenClass)
@@ -19,7 +19,7 @@ function ListRender(props) {
                 className={hiddenClass ? 'hidden' : 'show' }
             >
                 <NavLink 
-                     to={ `/${prefix}${props.typeProdUrl}/${props.preSlug}/${item.slug}`}
+                     to={ `/${props.typeProdUrl}/${props.preSlug}/${item.slug}-${prefix}`}
                      onClick={ ()=>{ props.setActive(item)} }
                 > 
                 {item.name}

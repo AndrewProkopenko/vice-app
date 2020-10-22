@@ -1,3 +1,13 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import '_header';
+@import '_services'; 
+@import '_price'; 
+body { 
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
 .link-container {
    a.active { 
       color: brown !important;
