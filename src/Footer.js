@@ -20,7 +20,7 @@ function Footer() {
                     </div>
                     <div className="site-time-work-footer">Звонить с 9:00 до 18:00</div> 
                     </div>
-                    footer                                                        <div className="site-address-footer">
+                                                                             <div className="site-address-footer">
                     <div className="address-title-footer">Адрес:</div>
                     <div className="addressItem">г. Пенза, ул. Богданова, д.10</div>
                     </div>

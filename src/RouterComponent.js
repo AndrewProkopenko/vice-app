@@ -22,7 +22,7 @@ import PlatnyyRemont from './uslugi/PlatnyyRemont'
 import ErrorPage from './ErrorPage' 
 
 import LaptopsApp from './Laptops/LaptopsApp';    
-import WashersApp from './Washers/WashersApp'
+// import WashersApp from './Washers/WashersApp'
  
 
 import LaptopProvider from './context/Laptops/LaptopProvider'
@@ -34,7 +34,7 @@ import WasherProvider from './context/Washers/WasherProvider'
 function RouterComponent() {
 
     const laptopsPrefix = prefixes[0]['laptops']
-    const washersPrefix = prefixes[0]['washers'] 
+    // const washersPrefix = prefixes[0]['washers'] 
 
     return (     
         
@@ -72,23 +72,23 @@ function RouterComponent() {
                             <Route exact path='/uslugi/remont-noutbukov' component={LaptopsApp} />
 
                             {/* Laptops */} 
-                            <Route exact path={`/${laptopsPrefix}laptops/brand/:brandSlug`} component={LaptopsApp} /> 
+                            {/* <Route exact path={`/${laptopsPrefix}laptops/brand/:brandSlug`} component={LaptopsApp} /> 
                             <Route exact path={`/${laptopsPrefix}laptops/service/:serviceSlug`} component={LaptopsApp} /> 
                             
                             <Route exact path={`/${laptopsPrefix}laptops/brand/`}>  <Redirect to={`/${laptopsPrefix}laptops`} /> </Route> 
                             <Route exact path={`/${laptopsPrefix}laptops/service/`}> <Redirect to={`/${laptopsPrefix}laptops`} /> </Route>
                             
-                            <Route exact path={`/${laptopsPrefix}laptops`} component={LaptopsApp} />
+                            <Route exact path={`/${laptopsPrefix}laptops`} component={LaptopsApp} /> */}
                              
 
                             {/* Washers */} 
-                            <Route exact path={`/${washersPrefix}washers/brand/:brandSlug`} component={WashersApp} /> 
+                            {/* <Route exact path={`/${washersPrefix}washers/brand/:brandSlug`} component={WashersApp} /> 
                             <Route exact path={`/${washersPrefix}washers/service/:serviceSlug`} component={WashersApp} />  
                             
                             <Route exact path={`/${washersPrefix}washers/brand/`}> <Redirect to={`/${washersPrefix}washers`} /> </Route> 
                             <Route exact path={`/${washersPrefix}washers/service/`}> <Redirect to={`/${washersPrefix}washers`} /> </Route>  
                             
-                            <Route  path={`/${washersPrefix}washers`} component={WashersApp} /> 
+                            <Route  path={`/${washersPrefix}washers`} component={WashersApp} />  */}
                             
                             {/* 404 Error */}
                             <Route  path='*' component={ErrorPage} />

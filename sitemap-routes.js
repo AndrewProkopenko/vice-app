@@ -5,18 +5,52 @@ import prefixes from './src/data/prefixes.json'
 import laptopsBrands from './src/data/laptops/brands.json'
 import laptopsServices from './src/data/laptops/services.json'
 
-import washersBrands from './src/data/washers/brands.json'
-import washersServices from './src/data/washers/services.json'
+// import washersBrands from './src/data/washers/brands.json'
+// import washersServices from './src/data/washers/services.json'
 
 const laptopsPrefix = prefixes[0]['laptops']
-const washersPrefix = prefixes[0]['washers'] 
+// const washersPrefix = prefixes[0]['washers'] 
 
 // const 
 
 export default (
     
-    <Route>  
+    <Route>   
+        <Route exact path='/'   />
 
+        
+        <Route exact path='/price'   />
+
+        <Route exact path='/uslugi'   />
+
+        <Route exact path='/uslugi/garantiynyy-remont'   />
+        <Route exact path='/uslugi/remont-kompyuterov'   />
+        <Route exact path='/uslugi/remont-istochnikov-bespereboynogo-pitaniya-i-stabilizatorov-napryazheniya'   />
+        <Route exact path='/uslugi/remont-printerov-mfu-kopirov'   />
+        <Route exact path='/uslugi/remont-planshetov-i-smartfonov'  />
+        <Route exact path='/uslugi/platnyy-remont'   />
+
+
+        <Route exact path={`/uslugi/remont-noutbukov/brand/`}></Route> 
+        <Route exact path={`/uslugi/remont-noutbukov/service/`}></Route>  
+        <Route exact path='/uslugi/remont-noutbukov'  />
+        
+        {
+            laptopsBrands.map((item, index) => (
+                <Route key={index} exact path={`/uslugi/remont-noutbukov/brand/${item.slug}-${laptopsPrefix}`}  />
+            ))
+        }
+        {
+            laptopsServices.map((item, index) => (
+                <Route key={index} exact path={`/uslugi/remont-noutbukov/service/${item.slug}-${laptopsPrefix}`} />
+            ))
+        }
+                            
+        
+
+       
+           
+        {/*
         {
             laptopsBrands.map((item, index) => (
                 <Route key={index} exact path={`/${laptopsPrefix}laptops/brand/${item.slug}`} />
@@ -27,8 +61,7 @@ export default (
                 <Route key={index} exact path={`/${laptopsPrefix}laptops/service/${item.slug}`} />
             ))
         }
-           
-        <Route exact path={`/${laptopsPrefix}laptops`} />
+         <Route exact path={`/${laptopsPrefix}laptops`} />
 
         {
             washersBrands.map((item, index) => (
@@ -39,10 +72,10 @@ export default (
             washersServices.map((item, index) => (
                 <Route key={index} exact path={`/${washersPrefix}washers/service/${item.slug}`} />
             ))
-        }   
+        }    */}
          
 
-        <Route  path={`/${washersPrefix}washers`} /> 
+        {/* <Route  path={`/${washersPrefix}washers`} />  */}
   
     </Route>
 );

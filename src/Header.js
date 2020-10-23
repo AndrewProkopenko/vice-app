@@ -73,6 +73,15 @@ function Header() {
                         
                     </div>
                 </nav>
+                <div className="search-wrapper">
+	 					<div className="search-button"></div>
+	  					<nav className="form-search">
+	  						<form action="/search" method="get">
+	  							<input type="text" name="search" onBlur="this.value=this.value==''?'Поиск по сайту':this.value" onFocus="this.value=this.value=='Поиск по сайту'?'':this.value;" value="Поиск по сайту" />
+	  							<input type="submit" value="" />
+	  						</form>
+	  					</nav>
+	  				</div>
             </div> 
         </header> 
             <div className="middle-panel header-mb-60" 

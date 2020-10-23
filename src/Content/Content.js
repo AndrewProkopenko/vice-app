@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom'
 function Content(props) { 
 
     const {brandSlug, serviceSlug} = useParams() 
-    console.log(brandSlug)
+    // console.log(brandSlug)
 
     let documentTitle = props.context.title
      
