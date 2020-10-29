@@ -1,16 +1,18 @@
-require("babel-register")({
-    presets: ["es2015", "react"]
-  });
-   
-  const router = require("./sitemap-routes").default;
-  const Sitemap = require("react-router-sitemap").default;
-  
-  function generateSitemap() {
-      return (
-        new Sitemap(router) 
-            .build("http://localhost:3000")
-            .save("./public/sitemap.xml")
-      );
-  }
-  
-  generateSitemap();
+
+const SitemapGenerator = require('sitemap-generator');
+ 
+// create generator
+const generator = SitemapGenerator('https://suraservice.ru', {
+  stripQuerystring: true,
+  filepath: './public/sitemap.xml', 
+  lastMod: true
+});
+ 
+// register event listeners
+generator.on('done', () => {
+  // sitemaps created
+  console.log('sitemap is created')
+});
+ 
+// start the crawler
+generator.start();

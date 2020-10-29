@@ -13,7 +13,7 @@ function Header() {
             <div className='container'>
                 <nav className="navbar-expand-sm">
                     
-                    <div className=" navbar-collapse" >
+                    <div className=" navbar-collapse justify-content-between" >
                         <ul className="navbar-nav ">
                             <li className="nav-item">
                                 <NavLink exact className=" sura-header-link" to="/">Главная</NavLink>
@@ -70,18 +70,18 @@ function Header() {
                                 <NavLink  className=" sura-header-link" to={`/${washersPrefix}washers`}  >Стиральные машины</NavLink>
                             </li>  */}
                         </ul>
-                        
+                        <div className="search-wrapper">
+                            <div className="search-button"></div>
+                            <nav className="form-search">
+                                <form action="/search" method="get">
+                                    <input type="text" name="search" onBlur="this.value=this.value==''?'Поиск по сайту':this.value" onFocus="this.value=this.value=='Поиск по сайту'?'':this.value;" value="Поиск по сайту" />
+                                    <input type="submit" value="" />
+                                </form>
+                            </nav>
+                        </div>
                     </div>
                 </nav>
-                <div className="search-wrapper">
-	 					<div className="search-button"></div>
-	  					<nav className="form-search">
-	  						<form action="/search" method="get">
-	  							<input type="text" name="search" onBlur="this.value=this.value==''?'Поиск по сайту':this.value" onFocus="this.value=this.value=='Поиск по сайту'?'':this.value;" value="Поиск по сайту" />
-	  							<input type="submit" value="" />
-	  						</form>
-	  					</nav>
-	  				</div>
+               
             </div> 
         </header> 
             <div className="middle-panel header-mb-60" 
