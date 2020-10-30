@@ -1,5 +1,15 @@
 .sura-header { 
     background: #2e0e00; 
+    li { 
+        position: relative;
+        &:hover {  
+            ul { 
+                display: block;
+                transform: scaleX(1) scaleY(1) !important; 
+                opacity: 1 !important;
+            }
+        }
+    }
     &-link { 
         position: relative;
         display: flex;
@@ -10,20 +20,21 @@
         font-size: 14px;
         color: #fff;
         text-decoration: none;
-        transition: all 0.3s ease-in-out;   
+        transition: all 0.3s ease-in-out;    
         &:hover { 
             background: #974726;
             text-decoration: none;
             color: #fff;
-            >ul {
+            ul {
                 transform: scaleX(1) scaleY(1); 
                 opacity: 1;
             }
-        }
+           
+        } 
         &.active { 
             background: #974726;
         }
-        >ul { 
+        & + ul { 
             opacity: 0;
             transform: scaleX(0) scaleY(0); 
             transform-origin: left top;

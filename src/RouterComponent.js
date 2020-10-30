@@ -4,12 +4,12 @@ import prefixes from './data/prefixes.json'
 
 import './assets/style/style.scss' ; 
   
-import Header from './Header'
-import Footer from './Footer'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
  
-import Home from './Home'
-import Price from './Price'
-import Services from './Services'
+import Home from './Components/Home'
+import Price from './Components/Price'
+import Services from './Components/Services'
 
 import GarantiynyyRemont from './uslugi/GarantiynyyRemont'
 import RemontKompyuterov from './uslugi/RemontKompyuterov'
@@ -19,16 +19,16 @@ import RemontPlanshetov from './uslugi/RemontPlanshetov'
 import PlatnyyRemont from './uslugi/PlatnyyRemont'
 
 
-import ErrorPage from './ErrorPage' 
+import ErrorPage from './Components/ErrorPage' 
 
 import LaptopsApp from './Laptops/LaptopsApp';    
 // import WashersApp from './Washers/WashersApp'
  
 
 import LaptopProvider from './context/Laptops/LaptopProvider'
-import WasherProvider from './context/Washers/WasherProvider'
+// import WasherProvider from './context/Washers/WasherProvider'
   
-
+import ScrollToTop from './ScrollToTop'
 
 
 function RouterComponent() {
@@ -38,14 +38,15 @@ function RouterComponent() {
 
     return (     
         
-        <WasherProvider>
+        // <WasherProvider>
         <LaptopProvider>  
+
         <div className="mb-4"> 
                 <Router > 
                    
-                        <Header/>
-
- 
+                        <ScrollToTop/>
+                        
+                        <Header/> 
 
                         <Switch>
                             <Route exact path='/' component={Home} />
@@ -100,7 +101,7 @@ function RouterComponent() {
              
         </div> 
         </LaptopProvider>
-        </WasherProvider>
+        // </WasherProvider>
     )
 }
 

@@ -13,12 +13,23 @@ const laptopsPrefix = prefixes[0]['laptops']
 export default (
     
     <Route>   
-        <Route exact path='/'   />
+        {/* Маршруты со старого сайта , которых пока нет в проекте  */}
+        <Route exact path='/o-nas' />
+        <Route exact path='/garantiynoye-obsluzhivaniye' />
+        <Route exact path='/nashi-vendory' />
 
-        
-        <Route exact path='/price'   />
+        <Route exact path='/novosti' />
+        <Route exact path='/otzyvy' />
+        <Route exact path='/kontakty' />
 
-        <Route exact path='/uslugi'   />
+
+        {/* Маршруты существующие в проекте   */}
+        <Route exact path='/' />
+ 
+        <Route exact path='/o-nas' />
+ 
+        <Route exact path='/price' /> 
+        <Route exact path='/uslugi' />
 
         <Route exact path='/uslugi/garantiynyy-remont'   />
         <Route exact path='/uslugi/remont-kompyuterov'   />

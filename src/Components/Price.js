@@ -1,6 +1,6 @@
 import React from 'react'
 
-import price from './data/price.json'
+import price from '../data/price.json'
 
 function Price() {
 

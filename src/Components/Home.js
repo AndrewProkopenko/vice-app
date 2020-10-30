@@ -237,27 +237,27 @@ function Home() {
             </div>
             <div className="slider-wrapper-review">
                 <div className="title">Отзывы наших клиентов</div>
-                <div className="owl-carousel owl-theme slider_review">
-                <div className="item">
-                    <img src alt="Катерина" />
-                    <div className="right-part-slider">
-                    <div className="name">Катерина</div>
-                    <div className="slider-body"> Заказывала чистку ноута от пыли и переустановку винды. Cделали работу довольно оперативно, результатом довольна. </div>				  	</div>
+                    <div className="owl-carousel owl-theme slider_review">
+                        <div className="item">
+                            <img src alt="Катерина" />
+                            <div className="right-part-slider">
+                            <div className="name">Катерина</div>
+                            <div className="slider-body"> Заказывала чистку ноута от пыли и переустановку винды. Cделали работу довольно оперативно, результатом довольна. </div>				  	</div>
+                        </div>
+                        <div className="item">
+                            <img src alt="Олег Иванов" />
+                            <div className="right-part-slider">
+                            <div className="name">Олег Иванов</div>
+                            <div className="slider-body"> Все сделали четко, качественно и быстро, а самое главное - за умеренную плату. </div>				  	</div>
+                        </div>
+                        <div className="item">
+                            <img src alt="Светлана" />
+                            <div className="right-part-slider">
+                            <div className="name">Светлана</div>
+                            <div className="slider-body"> Спасибо! Культурный и вежливый специалист. Качественный и быстрый ремонт. Буду советовать всем. </div>				  	</div>
+                        </div>
+                    </div>
                 </div>
-                <div className="item">
-                    <img src alt="Олег Иванов" />
-                    <div className="right-part-slider">
-                    <div className="name">Олег Иванов</div>
-                    <div className="slider-body"> Все сделали четко, качественно и быстро, а самое главное - за умеренную плату. </div>				  	</div>
-                </div>
-                <div className="item">
-                    <img src alt="Светлана" />
-                    <div className="right-part-slider">
-                    <div className="name">Светлана</div>
-                    <div className="slider-body"> Спасибо! Культурный и вежливый специалист. Качественный и быстрый ремонт. Буду советовать всем. </div>				  	</div>
-                </div>
-                </div>
-            </div>
             </div>
         </main> 
         </div>
