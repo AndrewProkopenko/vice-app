@@ -13,7 +13,7 @@ function RemontIstochnikov() {
       <div className="container">
           <h1 >Настройка Wi-Fi</h1>  
           <div className="localaboutus"> 
-              <div className="localpic localaboutus__pic localpic--smallmore ">
+              <div className="localpic localaboutus__pic localpic--smallmore float-left ">
                 <div className='image-230' style={{ backgroundImage: "url(../img/54431207_3.jpg)" }} ></div>	 
               </div> 
               <div className="localtext"> 

@@ -1,13 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import prefixes from '../data/prefixes.json'
+import data from '../data/database.json'
  
 
 function ListRender(props) {
 
+    
     let [hiddenClass, setHiddenClass] = React.useState(true)
 
-    const prefix = prefixes[0][`${props.typeProd}`]
+    const prefix = data.prefixes[`${props.typeProd}`] 
   
     function showFullList() { 
         setHiddenClass(!hiddenClass)

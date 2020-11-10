@@ -1,11 +1,10 @@
 import React from 'react' 
 import { NavLink , Link} from 'react-router-dom'; 
-// import prefixes from './data/prefixes.json'
+import data from '../data/database.json'
 
 function Header() { 
 
-    // const laptopsPrefix = prefixes[0]['laptops']
-    // const washersPrefix = prefixes[0]['washers'] 
+    const services = data.pages.uslugi  
 
     return (
         <>
@@ -18,12 +17,23 @@ function Header() {
                             <li className="nav-item">
                                 <NavLink exact className=" sura-header-link" to="/">Главная</NavLink>
                             </li>
-                            <li>
-                                <Link className=" sura-header-link" to="/uslugi">
+                            <li className="nav-item">
+                                <NavLink className=" sura-header-link" to="/uslugi">
                                     Услуги 
-                                </Link>
+                                </NavLink>
                                 <ul>
-                                        <li>
+                                        {
+                                            services.map( (item) => {
+                                                return(
+                                                    <li key={item.id} className='nav-item'>
+                                                        <NavLink exact to={`/uslugi/${item.slug}`}>
+                                                            {item.name}
+                                                        </NavLink>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                        {/* <li>
                                             <NavLink exact to='/uslugi/garantiynyy-remont'>
                                                 Гарантийный ремонт
                                             </NavLink>
@@ -57,7 +67,7 @@ function Header() {
                                             <NavLink exact to='/uslugi/platnyy-remont'>
                                                 Платный ремонт
                                             </NavLink>
-                                        </li>
+                                        </li> */}
                                     </ul>
                             </li>
                             <li className="nav-item">

@@ -1,22 +1,20 @@
 import React , { Component } from 'react'
 import LaptopContext from './LaptopContext'
 
-import brands from '../../data/laptops/brands.json'
-import services from '../../data/laptops/services.json'
-import companies from '../../data/laptops/company.json'
+import data from '../../data/database.json' 
 
 class LaptopProvider extends Component { 
+ 
 
     state = {   
-         brands: brands,
-         services: services,
-         companies: companies,
+         brands: data.laptops.brands,
+         services: data.laptops.services,
+         companies: data.laptops.companies,
          activeBrand: [],
-         activeService: [],
-         title: 'Ремонт ноутбуков'
+         activeService: []
     }
 
-    render() { 
+    render() {  
         return (
             <LaptopContext.Provider value={ {  
                 title: this.state.title,
@@ -35,19 +33,8 @@ class LaptopProvider extends Component {
                     this.setState({
                         activeService: newActiveService
                     })
-                }, 
-                getHeadingString: () => { 
-                    let headingString = this.state.title
-                    if(this.state.activeBrand.name) {
-                        headingString += ' - '
-                        headingString += this.state.activeBrand.name
-                    } 
-                    if(this.state.activeService.name) {
-                        headingString += ' - '
-                        headingString += this.state.activeService.name
-                    } 
-                    return headingString 
                 }
+                
             } }>
                 {this.props.children}
             </LaptopContext.Provider>

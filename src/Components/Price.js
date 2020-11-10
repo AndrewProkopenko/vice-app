@@ -1,12 +1,13 @@
 import React from 'react'
+import MetaTags from 'react-meta-tags';
+ 
 
-import price from '../data/price.json'
-
-function Price() {
+function Price(props) {
+ 
 
     function renderTable() {
         return (  
-            price.map( (itemPrice, index) => (
+            props.price.map( (itemPrice, index) => (
                 <div key={index} >
                     <tr>
                         <td colSpan='2' className='title-row'>{itemPrice.title}</td>
@@ -27,6 +28,10 @@ function Price() {
 
     return (
         <div className='container container-price'>
+             <MetaTags>
+                <title>{props.meta.title}</title> 
+                <metNavLink name="description" content={props.meta.description} /> 
+            </MetaTags>
             <h1>
                 Цены
             </h1>

@@ -6,16 +6,16 @@ import { useParams } from 'react-router-dom'
 
 
 function Content(props) { 
+    console.log(props.meta)
 
-    const {brandSlug, serviceSlug} = useParams() 
-    // console.log(brandSlug)
+    const {brandSlug, serviceSlug} = useParams()  
 
-    let documentTitle = props.context.title
-     
+    let documentTitle = props.meta.title 
+    let documentDesc = props.meta.description 
 
-    let headingString = brandSlug ? props.context.activeBrand.name : props.context.activeService.name
+    let headingString = brandSlug ? props.context.activeBrand.name : props.context.activeService.name || ''
  
-    if(headingString) documentTitle += " - " + headingString 
+    // if(headingString) documentTitle += " " + headingString 
  
     React.useEffect( () => {  
         if(brandSlug) {
@@ -39,9 +39,25 @@ function Content(props) {
         if(!brandSlug && !serviceSlug) { 
             props.context.setActiveService([])
             props.context.setActiveBrand([])
-        }
+        } 
     }, [] )  
-  
+    
+    function createMeta() {  
+        if(brandSlug) { 
+            documentTitle = documentTitle.replace('{{macros}}', headingString)
+            documentDesc = documentDesc.replace('{{macros}}', headingString) 
+        }
+        if(serviceSlug) { 
+            documentTitle = documentTitle.replace('{{macros}}', ' - ' + headingString)
+            documentDesc = documentDesc.replace('{{macros}}', ' - ' + headingString) 
+        }
+        if(!serviceSlug && !brandSlug) { 
+            documentTitle = documentTitle.replace('{{macros}}', '')
+            documentDesc = documentDesc.replace('{{macros}}', '') 
+        }
+        props.createHeading(documentTitle)
+    }
+
     function renderItems() {
         let newList = []
         props.context.companies.map( (item) => {  
@@ -116,9 +132,10 @@ function Content(props) {
     return (
         
         <div>
+            {createMeta()}
             <MetaTags>
                 <title>{documentTitle}</title>
-                <meta name="description" content={`Описание - ${documentTitle}`} /> 
+                <meta name="description" content={documentDesc} /> 
             </MetaTags>
             {/* bg-white border border-primary p-3 */}
             <div className=''> 

@@ -5,14 +5,20 @@ import LaptopContext from '../context/Laptops/LaptopContext'
 import Content from '../Content/Content' 
 import Sidebar from '../Sidebar/Sidebar' 
 
-function LaptopsApp() {
+function LaptopsApp(props) {
  
     const context = React.useContext(LaptopContext) 
-     
+
+    let [heading, setHeading] = React.useState('')
+      
+    function createHeading(string) {  
+        setHeading(string) 
+    }
+
     return ( 
-        <div className='container'>
+        <div className='container'> 
             <h1 className='my-5'>
-                { context.getHeadingString() }
+                { heading }  
             </h1> 
             <div className='row'>
                 <div className='col-12 col-md-3'> 
@@ -22,9 +28,13 @@ function LaptopsApp() {
                         typeProd='laptops'
                     /> 
                 </div>
-                
+                 
                 <div className='col-12 col-md-9'> 
-                    <Content context={context}  />
+                    <Content 
+                        context={context} 
+                        meta={props.meta}
+                        createHeading={createHeading}  
+                    />
                 </div>
             </div> 
         </div>  

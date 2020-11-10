@@ -14,7 +14,7 @@ function RemontKompyuterov() {
       <h1>Ремонт компьютеров</h1>
 	
       <div className="localaboutus">
-		<div class="localpic localaboutus__pic localpic--smallmore ">
+		<div class="localpic localaboutus__pic localpic--smallmore float-left  ">
 			<div className='image-230' style={{ backgroundImage: "url(../img/54422997_3.jpg)" }} ></div>	
 		</div>
         <div className="localtext">

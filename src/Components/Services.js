@@ -3,14 +3,13 @@ import { NavLink } from 'react-router-dom'
 import MetaTags from 'react-meta-tags';
 
 
-function Home() {
+function Services(props) {
  
     return (
         <div>
             <MetaTags>
-                <title>Услуги по ремонту компьютеров, оргтехники, планшетов в Москве - АСЦ "Сура-Сервис"</title>
-                <meta name="keywords" content="ремонт компьютеров цены, ремонт оргтехники в Москве, ремонт планшетов в Москве"></meta>
-                <meta name="description" content="Авторизованный сервисный центр &quot;Сура-Сервис&quot; осуществляет гарантийный и послегарантийный ремонт и техническое обслуживание компьютерного оборудования и оргтехники, планшетов и смартфонов, аудио и видео оборудования." /> 
+                <title>{props.meta.title}</title> 
+                <metNavLink name="description" content={props.meta.description} /> 
             </MetaTags>
             <div className='container services-container'>
                 <h1>Услуги</h1> 
@@ -60,4 +59,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Services
