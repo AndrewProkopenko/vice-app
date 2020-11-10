@@ -5,8 +5,7 @@ import { useParams } from 'react-router-dom'
          
 
 
-function Content(props) { 
-    console.log(props.meta)
+function Content(props) {  
 
     const {brandSlug, serviceSlug} = useParams()  
 

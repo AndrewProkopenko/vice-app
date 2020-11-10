@@ -1,5 +1,5 @@
 import React from 'react' 
-import { NavLink , Link} from 'react-router-dom'; 
+import { NavLink } from 'react-router-dom'; 
 import data from '../data/database.json'
 
 function Header() { 
@@ -21,7 +21,7 @@ function Header() {
                                 <NavLink className=" sura-header-link" to="/uslugi">
                                     Услуги 
                                 </NavLink>
-                                <ul>
+                                    <ul>
                                         {
                                             services.map( (item) => {
                                                 return(
@@ -32,42 +32,7 @@ function Header() {
                                                     </li>
                                                 )
                                             })
-                                        }
-                                        {/* <li>
-                                            <NavLink exact to='/uslugi/garantiynyy-remont'>
-                                                Гарантийный ремонт
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink exact to='/uslugi/remont-kompyuterov'>
-                                                Ремонт компьютеров
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink exact to='/uslugi/remont-noutbukov'>
-                                                Ремонт ноутбуков
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink exact to='/uslugi/remont-istochnikov-bespereboynogo-pitaniya-i-stabilizatorov-napryazheniya'>
-                                                Ремонт источников бесперебойного питания и стабилизаторов напряжения
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink exact to='/uslugi/remont-printerov-mfu-kopirov'>
-                                                Ремонт принтеров, МФУ, копиров
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink exact to='/uslugi/remont-planshetov-i-smartfonov'>
-                                                Ремонт планшетов и смартфонов
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink exact to='/uslugi/platnyy-remont'>
-                                                Платный ремонт
-                                            </NavLink>
-                                        </li> */}
+                                        } 
                                     </ul>
                             </li>
                             <li className="nav-item">

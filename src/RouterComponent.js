@@ -12,13 +12,11 @@ import Price from './Components/Price'
 import Services from './Components/Services'
 
 import SinglePageService from './Components/SinglePageService';
- 
- 
+  
 import ErrorPage from './Components/ErrorPage' 
  
 import LaptopsApp from './Laptops/LaptopsApp';     
- 
-
+  
 import LaptopProvider from './context/Laptops/LaptopProvider' 
   
 import ScrollToTop from './ScrollToTop'
@@ -27,6 +25,7 @@ import ScrollToTop from './ScrollToTop'
 function RouterComponent() {  
     const laptopsPrefix = data['prefixes'].laptops 
     const servicesList = data.pages.uslugi
+    const servicesData = data.pages
     const meta = data.meta
     const price = data.price
 
@@ -45,9 +44,9 @@ function RouterComponent() {
                                 <Route exact path='/price' render={() => <Price price={price} meta={meta.price} /> }  />
 
                                 {/* Services  -  Uslugi  */}
-                                <Route exact path='/uslugi' render={() => <Services meta={meta.uslugi} /> } />
+                                <Route exact path='/uslugi' render={() => <Services meta={meta.uslugi} data={servicesData} /> } />
                                 
-                                <Route exact path='/uslugi/remont-noutbukov' render={() => <LaptopsApp meta={meta['uslugi-remont-noutbukov']} /> }   />
+                                <Route exact path='/uslugi/remont-noutbukov' render={() => <LaptopsApp  meta={meta['uslugi-remont-noutbukov']} /> }   />
 
                                 {
                                     servicesList.map((item, index) => {
@@ -56,16 +55,9 @@ function RouterComponent() {
                                                 <SinglePageService page={item} data={data} meta={meta[`uslugi-${item.slug}`]} />
                                             </Route>
                                         )
+                                        return null
                                     })
-                                }
-
-                                {/* <Route exact path='/uslugi/garantiynyy-remont' component={GarantiynyyRemont} />
-                                <Route exact path='/uslugi/remont-kompyuterov' component={RemontKompyuterov} />
-                                <Route exact path='/uslugi/remont-istochnikov-bespereboynogo-pitaniya-i-stabilizatorov-napryazheniya' component={RemontIstochnikov} />
-                                <Route exact path='/uslugi/remont-printerov-mfu-kopirov' component={RemontPrinterov} />
-                                <Route exact path='/uslugi/remont-planshetov-i-smartfonov' component={RemontPlanshetov} />
-                                <Route exact path='/uslugi/platnyy-remont' component={PlatnyyRemont} /> */}
-
+                                } 
 
                                 <Route exact path={`/uslugi/remont-noutbukov/brand/`}>  <Redirect to={`/uslugi/remont-noutbukov`} /> </Route> 
                                 <Route exact path={`/uslugi/remont-noutbukov/service/`}> <Redirect to={`/uslugi/remont-noutbukov`} /> </Route>

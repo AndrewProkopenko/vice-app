@@ -5,11 +5,28 @@ import LaptopContext from '../context/Laptops/LaptopContext'
 import Content from '../Content/Content' 
 import Sidebar from '../Sidebar/Sidebar' 
 
-function LaptopsApp(props) {
- 
+import Breadcrumbs from '../Breadcrumbs'
+
+function LaptopsApp(props) {  
     const context = React.useContext(LaptopContext) 
 
     let [heading, setHeading] = React.useState('')
+
+    const breadcrumbs = [
+        {
+            name: 'Главная',
+            slug: '/'
+        },
+        {
+            name: 'Услуги',
+            slug: '/uslugi'
+        },
+        {
+            name: heading,
+            slug: '', 
+            lastChild: true
+        }
+    ]
       
     function createHeading(string) {  
         setHeading(string) 
@@ -20,6 +37,7 @@ function LaptopsApp(props) {
             <h1 className='my-5'>
                 { heading }  
             </h1> 
+            <Breadcrumbs items={breadcrumbs} />
             <div className='row'>
                 <div className='col-12 col-md-3'> 
                     <Sidebar
